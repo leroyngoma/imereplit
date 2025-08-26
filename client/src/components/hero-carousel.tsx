@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import slide2Img from "../../../attached_assets/slide2.jpg";
+import slide3Img from "../../../attached_assets/slide3.jpg";
 
 const slides = [
   {
@@ -12,7 +14,7 @@ const slides = [
     buttonHref: "/ai4african-signup?type=learn-more"
   },
   {
-    image: "https://images.unsplash.com/photo-1594824475520-bb282af2c326?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
+    image: slide2Img,
     alt: "African doctor examining patient with compassion",
     title: "Empowerment through Health",
     subtitle: "85+ Years of Combined Industry Experience",
@@ -20,7 +22,7 @@ const slides = [
     buttonHref: "#about"
   },
   {
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080",
+    image: slide3Img,
     alt: "African medical team collaborating on healthcare solutions",
     title: "Drive Change, Improve Healthcare for All",
     subtitle: "Bridging Healthcare Gaps Across Africa and the U.S.",
