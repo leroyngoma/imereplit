@@ -9,6 +9,7 @@ import WebinarsSection from "@/components/webinars-section";
 import NewsSection from "@/components/news-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import historyImage from "../../../attached_assets/historyofime.jpg";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
               <p className="text-lg text-ime-gray">International Medical Exchange, Inc. was officially incorporated as a nonprofit organization on January 16, 1997.</p>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="African healthcare leaders in international collaboration meeting" className="rounded-xl shadow-lg w-full h-auto" />
+              <img src={historyImage} alt="African healthcare leaders in international collaboration meeting" className="rounded-xl shadow-lg w-full h-auto" />
             </div>
           </div>
         </div>

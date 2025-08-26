@@ -1,4 +1,7 @@
 import { UserCheck, Globe, Microscope } from "lucide-react";
+import medicalTraining from "../../../attached_assets/medicaltraining.png";
+import globalOutreach from "../../../attached_assets/globaloutreach.png";
+import collaborative from "../../../attached_assets/collaborative.png";
 
 export default function ProgramsSection() {
   return (
@@ -18,7 +21,7 @@ export default function ProgramsSection() {
             <h3 className="text-2xl font-bold text-ime-blue mb-4">Medical Training</h3>
             <p className="text-ime-gray mb-6">We provide education and hands-on training programs for healthcare professionals in underserved areas, focusing on capacity building and knowledge transfer.</p>
             <img 
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+              src={medicalTraining} 
               alt="African medical professionals using advanced technology in training" 
               className="rounded-lg w-full h-48 object-cover"
             />
@@ -32,7 +35,7 @@ export default function ProgramsSection() {
             <h3 className="text-2xl font-bold text-ime-blue mb-4">Global Outreach</h3>
             <p className="text-ime-gray mb-6">Our initiatives focus on delivering essential medical support to improve public health outcomes across African nations and underserved U.S. communities.</p>
             <img 
-              src="https://images.unsplash.com/photo-1594824475520-bb282af2c326?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+              src={globalOutreach} 
               alt="African doctor providing compassionate care in community outreach" 
               className="rounded-lg w-full h-48 object-cover"
             />
@@ -46,7 +49,7 @@ export default function ProgramsSection() {
             <h3 className="text-2xl font-bold text-ime-blue mb-4">Collaborative Research</h3>
             <p className="text-ime-gray mb-6">We foster partnerships to conduct research that addresses global health challenges, with a focus on AI-powered solutions and innovative healthcare delivery.</p>
             <img 
-              src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250" 
+              src={collaborative} 
               alt="African medical research teams collaborating" 
               className="rounded-lg w-full h-48 object-cover"
             />

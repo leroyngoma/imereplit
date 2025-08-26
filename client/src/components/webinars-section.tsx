@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Play, ExternalLink, Calendar, Users } from "lucide-react";
+import digitalHealthInfra from "../../../attached_assets/digitalhealthinfra.png";
+import collaborativeThumb from "../../../attached_assets/collaborative.png";
 
 const webinars = [
   {
@@ -19,7 +21,7 @@ const webinars = [
     duration: "75 minutes", 
     participants: "180+ policy makers",
     youtubeUrl: "https://youtube.com/watch?v=example2",
-    thumbnail: "https://images.unsplash.com/photo-1594824475520-bb282af2c326?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225"
+    thumbnail: digitalHealthInfra
   },
   {
     title: "Partnership Models for African Health Innovation", 
@@ -28,7 +30,7 @@ const webinars = [
     duration: "60 minutes",
     participants: "320+ stakeholders",
     youtubeUrl: "https://youtube.com/watch?v=example3",
-    thumbnail: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=225"
+    thumbnail: collaborativeThumb
   }
 ];
 

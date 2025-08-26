@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import academicImg from "../../../attached_assets/academic.png";
 
 const newsItems = [
   {
@@ -16,7 +17,7 @@ const newsItems = [
   {
     title: "Partnership with Leading Academic Institutions",
     description: "IME announces new partnerships with universities to expand medical training programs across the African continent.",
-    image: "https://images.unsplash.com/photo-1594824475520-bb282af2c326?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=250",
+    image: academicImg,
     alt: "African doctor engaged in medical education and training"
   }
 ];

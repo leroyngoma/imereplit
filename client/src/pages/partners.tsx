@@ -165,7 +165,7 @@ export default function Partners() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Partner with IME</h2>
           <p className="text-xl mb-8 opacity-90">Join our network of academic institutions, healthcare organizations, and technology partners to improve healthcare delivery across Africa and underserved communities.</p>
-          <a href="#contact" className="bg-ime-gold hover:bg-yellow-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors">
+          <a href="/#contact" className="bg-ime-gold hover:bg-yellow-500 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors">
             Explore Partnership Opportunities
           </a>
         </div>
