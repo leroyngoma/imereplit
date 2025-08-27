@@ -16,9 +16,25 @@ function Router() {
   const [location] = useLocation();
 
   useEffect(() => {
-    // If there's a hash (anchor navigation), let the browser handle scrolling to the element
-    if (window.location.hash) return;
-    // Otherwise, ensure we start at the top of the new page
+    const { hash } = window.location;
+    if (hash) {
+      // Try to scroll to the anchor after the new page mounts
+      const targetId = hash.replace('#', '');
+      const start = Date.now();
+      const timeoutMs = 1000;
+      const intervalMs = 50;
+      const interval = setInterval(() => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          clearInterval(interval);
+        } else if (Date.now() - start > timeoutMs) {
+          clearInterval(interval);
+        }
+      }, intervalMs);
+      return;
+    }
+    // No hash: ensure we start at the top of the new page
     window.scrollTo({ top: 0, behavior: "auto" });
   }, [location]);
 

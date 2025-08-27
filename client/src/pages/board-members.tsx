@@ -64,7 +64,7 @@ const council: Member[] = [
   { name: "Dr. Rajeev Rao Eashwari", image: "/assets/profilepics/rajeev.jpg" },
   { name: "Dr. Marlon D. Joseph", image: "/assets/profilepics/marlon.jpeg" },
   { name: "Dr. Ghazal Hassan", image: "/assets/profilepics/Ghazal.jpg" },
-  { name: "Mr. Leroy Ngoma", image: "/assets/profilepics/leroy.jpg" },
+  { name: "Mr. Leroy T. Ngoma", image: "/assets/profilepics/leroy.jpg" },
   { name: "Mr. Omphemetse Kgomongwe", image: "/assets/profilepics/omphemetse.png" },
   { name: "Dr. Jocelyn Turner-Musa", image: "/assets/profilepics/jocelyn.jpg" },
   { name: "Dr. Michael T. Nettles", image: "/assets/profilepics/michael.png" },
@@ -148,10 +148,10 @@ export default function BoardMembers() {
       <div className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <Link href="/#board" className="inline-flex items-center text-ime-blue hover:text-ime-light-blue mb-4">
+            <a href="/#board" className="inline-flex items-center text-ime-blue hover:text-ime-light-blue mb-4">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Homepage
-            </Link>
+            </a>
             <h1 className="text-4xl md:text-5xl font-bold text-ime-blue mb-4">Board & Advisors</h1>
             <p className="text-xl text-ime-gray max-w-3xl mx-auto">
               Dedicated individuals committed to addressing escalating health challenges facing African populations

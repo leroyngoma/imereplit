@@ -5,7 +5,7 @@ import { Link } from "wouter";
 
 export default function AI4AfricanSection() {
   return (
-    <section id="ai4african" className="py-20 bg-gradient-to-br from-ime-blue to-ime-light-blue text-white">
+    <section id="ai4african" className="py-20 bg-gradient-to-br from-ime-blue to-ime-light-blue text-white scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -15,7 +15,7 @@ export default function AI4AfricanSection() {
           </div>
           <h2 className="text-5xl md:text-6xl font-bold mb-6">AI4African Health Initiative</h2>
           <p className="text-xl md:text-2xl opacity-90 max-w-4xl mx-auto">
-            Transforming African Healthcare Through Artificial Intelligence – A $2.5 Million Investment in the Future of Health
+            Transforming African Healthcare Through Artificial Intelligence
           </p>
         </div>
 

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Play, ExternalLink, Calendar, Users } from "lucide-react";
 import digitalHealthInfra from "../../../attached_assets/digitalhealthinfra.png";
 import collaborativeThumb from "../../../attached_assets/collaborative.png";
+import { Link } from "wouter";
 
 const webinars = [
   {
@@ -36,7 +37,7 @@ const webinars = [
 
 export default function WebinarsSection() {
   return (
-    <section id="webinars" className="py-20 bg-white">
+    <section id="webinars" className="py-20 bg-white scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-ime-blue mb-6">Webinars & Educational Resources</h2>
@@ -99,9 +100,11 @@ export default function WebinarsSection() {
 
         <div className="text-center mt-12">
           <p className="text-ime-gray mb-6">Stay updated on upcoming webinars and educational content</p>
-          <Button size="lg" className="bg-ime-blue hover:bg-blue-800 text-white px-8 py-3">
-            Subscribe to Our Newsletter
-          </Button>
+          <Link href="/newsletter">
+            <Button size="lg" className="bg-ime-blue hover:bg-blue-800 text-white px-8 py-3">
+              Subscribe to Our Newsletter
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
