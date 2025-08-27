@@ -1,3 +1,5 @@
+import missionImg from "../../../attached_assets/mission.jpg";
+import visionImg from "../../../attached_assets/vision.jpg";
 export default function AboutSection() {
   return (
     <section id="about" className="py-20 bg-gray-50">
@@ -10,7 +12,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src={missionImg}
               alt="African health workers in community outreach" 
               className="rounded-xl shadow-lg w-full h-auto"
             />
@@ -30,7 +32,7 @@ export default function AboutSection() {
           </div>
           <div className="order-1 lg:order-2">
             <img 
-              src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src={visionImg}
               alt="Healthcare technology implementation in Africa" 
               className="rounded-xl shadow-lg w-full h-auto"
             />
