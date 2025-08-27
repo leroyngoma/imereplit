@@ -11,7 +11,7 @@ const slides = [
     title: "AI4African Health Initiative",
     subtitle: "Transforming African Healthcare Through Artificial Intelligence",
     buttonText: "Learn About AI4African Health",
-    buttonHref: "/ai4african-signup?type=learn-more"
+    buttonHref: "/ai4african-signup"
   },
   {
     image: slide2Img,
@@ -53,8 +53,11 @@ export default function HeroCarousel() {
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
+              index === currentSlide
+                ? "opacity-100 z-10 pointer-events-auto"
+                : "opacity-0 z-0 pointer-events-none"
             }`}
+            aria-hidden={index !== currentSlide}
           >
             <img
               src={slide.image}

@@ -1,67 +1,45 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { User, ExternalLink } from "lucide-react";
-import { useState } from "react";
+import { User } from "lucide-react";
 import { Link } from "wouter";
 
-const boardMembers = [
+type BoardMember = {
+  name: string;
+  title: string;
+  image?: string;
+  fullBio?: string;
+  roles?: string[];
+  location?: string;
+};
+
+const boardMembers: BoardMember[] = [
   {
-    name: "Henry M. Musenge, Ph.D.",
+    name: "Dr. Henry M. Musenge",
     title: "Co-Chairman, IME",
-    image: "https://ime-inc.org/wp-content/uploads/2023/10/dr_henry_musenge_co-chairman_ime_page-0001-copy.jpg",
-    roles: [
-      "Managing Consultant, Delmore Consultants Zambia Ltd",
-      "Chairperson, Tobaka Investments Zambia Ltd",
-      "Author"
-    ],
+    image: "/assets/profilepics/henry.jpg",
+
     fullBio: "Dr. Henry M. Musenge brings extensive experience in healthcare management and consulting across African markets. As Managing Consultant at Delmore Consultants Zambia Ltd and Chairperson of Tobaka Investments Zambia Ltd, he has led numerous initiatives in healthcare infrastructure development and policy formulation. His published works focus on sustainable healthcare delivery models in resource-constrained environments."
   },
   {
-    name: "Basil F. Olisa",
+    name: "Dr. Basil F. Olisa",
     title: "Co-Chairman and CEO, IME",
-    image: "https://ime-inc.org/wp-content/uploads/2023/10/basil_olisa_co-chair_and_ceo_ime-817x1024.jpg",
-    location: "Silver Spring, MD 20914",
+    image: "/assets/profilepics/basil.jpg",
     fullBio: "Basil F. Olisa is the visionary leader behind IME's expansion and strategic direction. Based in Silver Spring, Maryland, he has orchestrated partnerships across multiple continents and spearheaded the organization's evolution from medical missions to comprehensive AI-driven healthcare initiatives. Under his leadership, IME has established partnerships with leading academic institutions and international health organizations."
   },
   {
-    name: "Sylvanus A. Ayeni, M.D.",
+    name: "Dr. Sylvanus A. Ayeni",
     title: "Honorary Medical Director, IME",
-    roles: [
-      "Neurosurgeon (Retired) and Author",
-      "President and Founder, Pan Africa Children Advocacy Watch"
-    ],
+    image: "/assets/profilepics/sylvanus.jpg",
     fullBio: "Dr. Sylvanus A. Ayeni is a distinguished neurosurgeon whose career spans decades of clinical excellence and advocacy work. As President and Founder of Pan Africa Children Advocacy Watch, he has championed healthcare access for children across the continent. His medical expertise and commitment to Pan-African health initiatives provide crucial clinical oversight for IME's programs."
   },
   {
-    name: "Doris Browne, M.D., MPH",
-    title: "President and CEO",
-    roles: [
-      "Browne and Associates, Inc., Washington, D.C.",
-      "Past President, National Medical Association (NMA), U.S."
-    ],
+    name: "Dr. Doris Browne",
+    title: "Board Member, IME",
+    image: "/assets/profilepics/doris.png",
     fullBio: "Dr. Doris Browne brings exceptional leadership credentials as Past President of the National Medical Association and current President and CEO of Browne and Associates, Inc. Her dual expertise in medicine and public health, combined with her extensive network within the African-American medical community, strengthens IME's mission of cross-continental healthcare collaboration."
   },
-  {
-    name: "Omphemetse Kgomongwe",
-    title: "Co-Founder and Executive Director of AI BizHive",
-    image: "https://ime-inc.org/wp-content/uploads/2025/06/Screenshot-2025-06-06-172227.png",
-    roles: [
-      "AI BizHive",
-      "20+ years executive leadership experience"
-    ],
-    fullBio: "Omphemetse Kgomongwe is the Co-Founder and Executive Director of AI BizHive, a pan-African platform dedicated to accelerating AI adoption in healthcare, agriculture, and education. With over 20 years of executive leadership experience across mining, energy, agriculture, and technology sectors, he brings invaluable expertise to IME's AI4African Health Initiative. He has served on South Africa's Minerals and Petroleum Board and currently leads strategic partnerships for AI implementation across African markets."
-  },
-  {
-    name: "Dr. Ghazal Hassan, PhD",
-    title: "Professor",
-    image: "https://ime-inc.org/wp-content/uploads/2025/06/Screenshot-2025-06-06-163707.png",
-    roles: [
-      "Royal Institute of Executive Management, Morocco",
-      "WHO AI for Health Focus Group Member"
-    ],
-    fullBio: "Dr. Ghazal Hassan is a Professor at the Royal Institute of Executive Management in Salé, Morocco, and serves on the WHO's AI for Health Regulations Focus Group. With expertise in bioinformatics, genomics, and digital health, he co-chairs the AI for Health Working Group at the International Society for Telemedicine and eHealth. His research bridges science, policy, and innovation to promote equitable AI-powered health systems across Africa and globally."
-  }
+  
 ];
 
 export default function BoardSection() {
